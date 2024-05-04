@@ -1,13 +1,13 @@
 public class Person {
-        private String name;
-        private int age;
+        private String name; //Зазначено модифікатор private тому, що ці дані вважаються конфіденційними для класу, і не хочу, щоб вони були доступні ззовні
+        private int age; //Зазначено модифікатор private тому, що ці дані вважаються конфіденційними для класу, і не хочу, щоб вони були доступні ззовні
 
-        public Person(String name, int age) {
+        public Person(String name, int age) { //Зазначено модифікатор public тому, що  вони призначені для отримання та встановлення значень полів name та age і можуть бути використані з будь-якого місця програми
             this.name = name;
             this.age = age;
         }
 
-        public String getName() {
+        public String getName() { //Зазначено модифікатор public тому, що  вони призначені для отримання та встановлення значень полів name і можуть бути використані з будь-якого місця програми
             return name;
         }
 
@@ -15,7 +15,7 @@ public class Person {
             this.name = name;
         }
 
-        public int getAge() {
+        public int getAge() { //Зазначено модифікатор public тому, що  вони призначені для отримання та встановлення значень полів name та age і можуть бути використані з будь-якого місця програми
             return age;
         }
 
